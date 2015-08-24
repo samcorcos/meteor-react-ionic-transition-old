@@ -1,5 +1,8 @@
 Settings = React.createClass({
   render() {
-    return <h1>Settings</h1>
-  }
+    return (
+      <div className="route-wrapper">
+        <h1>Settings</h1>
+      </div>
+    )  }
 });

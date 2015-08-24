@@ -1,5 +1,8 @@
 Other = React.createClass({
   render() {
-    return <h1>Other</h1>
-  }
+    return (
+      <div className="route-wrapper">
+        <h1>Other</h1>
+      </div>
+    )  }
 });

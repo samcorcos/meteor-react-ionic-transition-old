@@ -3,7 +3,6 @@ let Transition = React.addons.CSSTransitionGroup;
 AppBody = React.createClass({
   render() {
     var key = window.location.pathname;
-    console.log(key);
     return (
       <div className="ionic-body">
         <div className="bar bar-header bar-light">

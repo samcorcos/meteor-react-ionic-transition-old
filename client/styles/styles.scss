@@ -1,6 +1,15 @@
 @import ".meteor/local/build/programs/server/assets/packages/meteoric_ionic-sass/ionic";
 @import ".meteor/local/build/programs/server/assets/packages/meteoric_ionicons-sass/ionicons";
 
+.route-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
 .leftIn-enter {
   transform: translateX(-100%);
 }
