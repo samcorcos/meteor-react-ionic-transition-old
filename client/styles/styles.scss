@@ -1,2 +1,40 @@
 @import ".meteor/local/build/programs/server/assets/packages/meteoric_ionic-sass/ionic";
 @import ".meteor/local/build/programs/server/assets/packages/meteoric_ionicons-sass/ionicons";
+
+.leftIn-enter {
+  transform: translateX(-100%);
+}
+
+.leftIn-enter.leftIn-enter-active {
+  transform: translateX(0);
+  transition: transform .3s ease;
+}
+
+.leftIn-leave {
+  transform: translateX(0);
+}
+
+.leftIn-leave.leftIn-leave-active {
+  transform: translateX(-100%);
+  transition: transform .3s ease;
+}
+
+// @each $name, $translation in (leftIn, -100%), (rightIn, 100%) {
+//   .#{$name}-enter {
+//     transform: translateX(#{$translation});
+//   }
+//
+//   .#{$name}-enter.#{$name}-enter-active {
+//     transform: translateX(0);
+//     transition: transform .3s ease;
+//   }
+//
+//   .#{$name}-leave {
+//     transform: translateX(0);
+//   }
+//
+//   .#{$name}-leave.#{$name}-leave-active {
+//     transform: translateX(#{$translation});
+//     transition: transform .3s ease;
+//   }
+// }

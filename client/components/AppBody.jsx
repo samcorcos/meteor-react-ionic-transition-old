@@ -1,5 +1,9 @@
+let Transition = React.addons.CSSTransitionGroup;
+
 AppBody = React.createClass({
   render() {
+    var key = window.location.pathname;
+    console.log(key);
     return (
       <div className="ionic-body">
         <div className="bar bar-header bar-light">
@@ -8,13 +12,15 @@ AppBody = React.createClass({
           <ReactRouter.Link className="button button-icon icon ion-heart" to={"/other"}></ReactRouter.Link>
         </div>
 
-        <div className="view">
-          <div className="scroll-content ionic-scroll">
-            <div className="content overflow-scroll has-header">
-              <ReactRouter.RouteHandler />
+          <div className="view">
+            <div className="scroll-content ionic-scroll">
+              <div className="content overflow-scroll has-header">
+                <Transition transitionName="leftIn">
+                  <ReactRouter.RouteHandler key={key} />
+                </Transition>
+              </div>
             </div>
           </div>
-        </div>
       </div>
     )
   }
