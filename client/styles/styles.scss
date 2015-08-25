@@ -10,13 +10,20 @@
   overflow-y: scroll;
 }
 
+.home-route {
+  background-color: blue;
+}
+.other-route {
+  background-color: red;
+}
+
 .leftIn-enter {
   transform: translateX(-100%);
 }
 
 .leftIn-enter.leftIn-enter-active {
   transform: translateX(0);
-  transition: transform .3s ease;
+  transition: transform 4s ease;
 }
 
 .leftIn-leave {
@@ -25,7 +32,27 @@
 
 .leftIn-leave.leftIn-leave-active {
   transform: translateX(-100%);
-  transition: transform .3s ease;
+  transition: transform 4s ease;
+}
+
+
+
+.rightIn-enter {
+  transform: translateX(100%);
+}
+
+.rightIn-enter.rightIn-enter-active {
+  transform: translateX(0);
+  transition: transform 4s ease;
+}
+
+.rightIn-leave {
+  transform: translateX(0);
+}
+
+.rightIn-leave.rightIn-leave-active {
+  transform: translateX(100%);
+  transition: transform 4s ease;
 }
 
 // @each $name, $translation in (leftIn, -100%), (rightIn, 100%) {

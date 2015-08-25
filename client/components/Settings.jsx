@@ -1,8 +1,10 @@
 Settings = React.createClass({
+  componentWillMount() {
+    this.props.setTransitionType("rightIn")
+  },
   render() {
     return (
-      <div className="route-wrapper">
         <h1>Settings</h1>
-      </div>
-    )  }
+    )
+  }
 });
